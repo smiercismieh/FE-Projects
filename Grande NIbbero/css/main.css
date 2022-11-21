@@ -1,0 +1,286 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #fef6e6;
+}
+
+/* header */
+.head {
+	position: relative;
+	top: 0px;
+	height: 75px;
+	border: 1px solid #333;
+	text-align: center;
+	overflow: hidden;
+	line-height: 75px;
+}
+.head-logo {
+	position: relative;
+	width: 75px;
+	height: 75px;
+	z-index: 1;
+	background-color: #ff4e00;
+	border-right: 1px solid #333;
+	line-height: 80px;
+	text-align: center;
+}
+
+.head-logo a {
+	color: #333;
+	font-size: 56px;
+	transition: 0.2s;
+}
+
+.head-logo a:hover {
+	color: #111;
+	text-shadow: 0 0 5px #ff0b00;
+}
+
+.head-text {
+	position: absolute;
+	top: 0px;
+	width: 100vw;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #ec9f05;
+}
+
+/* nav */
+.nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	height: 50px;
+	background-color: #333;
+	line-height: 50px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+.nav-item {
+	display: inline;
+}
+.nav-item a {
+	padding: 10px 75px;
+	color: #ddd;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.nav-item a:hover {
+	color: #ec9f05;
+	text-shadow: 0 0 5px #ff4e00;
+}
+
+/* main section  */
+main {
+	margin: 50px auto;
+	width: 1200px;
+}
+
+main h2 {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-us-box {
+	position: relative;
+	height: 300px;
+	margin: 30px 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	box-shadow: 0 0 10px #333;
+}
+
+.first {
+	background-image: url('../img/pizza-g509e63b0a_1920.jpg');
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.second {
+	background-image: url('../img/pizza-background-gafea082cc_1920.jpg');
+	border-radius: 10px;
+}
+
+.third {
+	background-image: url('../img/pizza-gd5b7c767f_1920.jpg');
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.about-us-text {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	padding: 20px 40px;
+	text-align: center;
+	color: #eee;
+	text-shadow: 0 0 2px #111;
+}
+
+.about-us-text h3 {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 1.25em;
+}
+
+.about-us-bg {
+	position: absolute;
+	bottom: 0;
+	height: 40%;
+	width: 100%;
+	background-color: rgba(27, 8, 0, 0.4);
+}
+
+/* Promo page  */
+
+.promo-list li {
+	list-style: none;
+	height: 60px;
+	margin-bottom: 30px;
+	padding: 20px 40px;
+	background-color: rgba(51, 51, 51, 0.02);
+	box-shadow: 0 0 10px rgba(51, 51, 51, 0.2);
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.promo-list li:hover {
+	color: #ff0b00;
+	background-color: rgba(51, 51, 51, 0.03);
+	box-shadow: 0 0 10px rgba(51, 51, 51, 0.3);
+	height: 120px;
+}
+
+.promo-list li:hover > h3 {
+	color: #ff0b00;
+}
+
+.promo-list li:hover > p {
+	color: #333;
+}
+
+.promo-list li h3 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.promo-list li p {
+	text-align: center;
+	color: transparent;
+	transition: 0.3s;
+}
+
+/* Menu page  */
+.tab-price-list {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #333;
+	border-collapse: collapse;
+	background-color: hsla(3, 100%, 50%, 0.4);
+	color: #333;
+}
+.tab-price-list td {
+	height: 40px;
+	line-height: 40px;
+}
+
+.unit-name {
+	width: 40%;
+}
+
+.tab-header {
+	background-color: hsla(3, 100%, 50%, 0.2);
+	border: 2px solid #333;
+	tab-size: 1rem;
+	height: 40px;
+}
+
+.tab-header span {
+	font-size: 18px;
+	margin: 0 3px;
+}
+.tab-list span {
+	margin: 0 5px;
+}
+
+.tab-price-list tr {
+	border-bottom: 1px solid #333;
+}
+.tab-list p {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.unit-price {
+	width: 20%;
+	font-style: italic;
+}
+
+.fa-leaf {
+	color: limegreen;
+}
+
+.fa-pepper-hot {
+	color: red;
+}
+/* contact page  */
+
+.contact-us p {
+	font-size: 1.17em;
+	text-align: center;
+	margin: 20px 40px;
+}
+.contact-us span {
+	margin: 10px;
+}
+
+.map {
+	text-align: center;
+	margin: 30px auto;
+}
+
+/* footer */
+.foot {
+	height: 40px;
+	width: 100%;
+	background-color: #333;
+	color: #bbb;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.icon-box {
+	margin-left: 20px;
+}
+
+.icon-box a {
+	color: #bbb;
+	margin: 0 5px;
+	transition: 0.2s;
+}
+
+.icon-box a:hover {
+	color: #ff4e00;
+	text-shadow: 0 0 3px #ec9f05;
+}

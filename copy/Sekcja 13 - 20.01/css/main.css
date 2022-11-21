@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #555;
+	height: 100vh;
+	background-image: url(../img/pizza-g6637fc702_1920.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: exclusion;
+}
+
+.head {
+	position: absolute;
+	top: 0px;
+	height: 80px;
+	/* width: 100vw; */
+	border: 1px solid #333;
+	text-align: center;
+	overflow: hidden;
+}
+
+.head-logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	z-index: 1;
+	background-color: #ff4e00;
+	border-right: 1px solid #333;
+}
+
+.head-text {
+	position: absolute;
+	top: 0px;
+	width: 100vw;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 80px;
+
+	background-color: #ec9f05;
+}
+
+.fa-pizza-slice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #333;
+}
+
+.nav {
+	position: absolute;
+	top: 80px;
+	width: 100vw;
+	height: 50px;
+	padding: 0 auto;
+	background-color: #333;
+	line-height: 50px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.nav-item {
+	display: inline;
+}
+
+.nav-item a {
+	margin: auto 40px;
+	padding: 10px 40px;
+	border-radius: 10px;
+	height: 75px;
+	width: 125px;
+	color: #ddd;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 0.3s;
+}
+
+.nav-item a:hover {
+	color: #ec9f05;
+	cursor: pointer;
+	text-shadow: 0 0 5px #ff4e00;
+}
+
+.main {
+	position: relative;
+	top: 150px;
+	color: #ddd;
+	font-size: 24px;
+	text-shadow: 0 0 5px black;
+	font-weight: 500;
+	/* background-color: #333; */
+	text-align: center;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - project one</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="bi bi-camera2 orange-color px-3"></i>MNS Studio</a>
+          <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active my-3" href="#home">Home</a>
+              <a class="nav-link my-3" href="#about-us">O nas</a>
+              <a class="nav-link my-3" href="#team">Zespół</a>
+              <a class="nav-link my-3" href="#contact">Kontakt</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+ 
+      <section id="home" class="home">
+          <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-light text-center">
+              <p class="display-1">MNX Studio</p>
+              <p class="welcome-text mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <a href="#about-us" class="btn btn-outline-light rounded-pill">Poznaj nas</a>
+              <div class="hero-shadow"></div>
+          </div>
+      </section>
+      <main>
+      <section id="about-us" class="about-us">
+        <div class="container py-5">
+        <div class="card-group">
+          <div class="row">
+          <div class="card col-12 col-md-6 col-lg-3">
+            <div class="card-body text-center p-4 p-lg-5 mx-2 my-2 my-md-4">
+              <h3 class="card-title ">jakość</h5>
+              <i class="bi bi-check"></i>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugit.</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-3">
+            <div class="card-body text-center p-4 p-lg-5 mx-2 my-2 my-md-4">
+              <h3 class="card-title ">klienci</h5>
+              <i class="bi bi-people-fill"></i>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugit.</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-3">
+            <div class="card-body text-center p-4 p-lg-5 mx-2 my-2 my-md-4">
+              <h3 class="card-title ">sprzęt</h5>
+              <i class="bi bi-hdd-stack-fill"></i>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugit.</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-6 col-lg-3">
+            <div class="card-body text-center p-4 p-lg-5 mx-2 my-2 my-md-4">
+              <h3 class="card-title">ceny</h5>
+              <i class="bi bi-currency-dollar"></i>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="container py-5">
+        <p class="display-4 text-uppercase text-center mb-4 orange-color">Czym się wyróżniamy?</p>
+
+        <div class="accordion py-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Najlepsza jakość produktów
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit neque in non numquam illo exercitationem! Recusandae quasi culpa qui corporis eligendi voluptates, asperiores sequi mollitia delectus nihil, quis autem.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Świetne relacje z klientami
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis rem perspiciatis qui exercitationem dicta doloribus nobis fugit reprehenderit officiis dignissimos voluptatum error ab repellendus, nostrum minima, optio similique necessitatibus repudiandae?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Zdobywcy wielu nagród
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates laborum esse qui eaque blanditiis atque necessitatibus nihil optio veritatis consequuntur vero velit, excepturi eum accusantium vel, nesciunt repudiandae aperiam quia.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="team" class="team bg-light py-5">
+        <div class="container py-5 text-center">
+          <p class="display-3 orange-color mb-0 text-uppercase">Zespół</p>
+          <p class="py-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illo maxime pariatur velit. Molestias eius, numquam soluta earum laudantium tempore necessitatibus doloribus ipsa voluptatibus reiciendis, maxime aliquid ratione, aspernatur beatae.</p>
+
+
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/kiero_1920.jpg" class="card-img-top" alt="CEO">
+                <div class="card-body">
+                  <h5 class="card-title">CEO</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nulla perferendis harum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/ignacy_1920.jpg" class="card-img-top" alt="Ignacy">
+                <div class="card-body">
+                  <h5 class="card-title">Ignacy</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nulla perferendis harum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/michal_1920.jpg" class="card-img-top" alt="Michał">
+                <div class="card-body">
+                  <h5 class="card-title">Michał</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nulla perferendis harum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/andrzej_1920.jpg" class="card-img-top" alt="Pan Andrzej">
+                <div class="card-body">
+                  <h5 class="card-title">Pan Andrzej</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nulla perferendis harum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact bg-dark text-light py-5">
+        <div class="container text-center py-5">
+          <p class="display-3 pb-lg-5 text-uppercase">Napisz do nas</p>
+
+          <div class="row">
+            <div class="col-lg-9 my-5 m-lg-0">
+              <form>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Imię i nazwisko">
+                </div>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Adres mailowy">
+                </div>
+                <div class="input-group mb-3">
+                  <textarea rows="6" class="form-control" placeholder="Treść wiadomości"></textarea>
+                </div>
+
+                <input type="submit" value="Wyślij" class="btn btn-light px-4 py-2 submit-btn">
+              </form>
+            </div>
+
+            <div class="col-lg-3 mt-4 m-lg-0 contact-info">
+              <h3>Adres</h3>
+              <p class="orange-color">MNX Studio</p>
+              <p><i class="bi bi-geo-alt orange-color"></i>ul. Sezamkowa 21 <br> 31-128 Kraków</p>
+              <p><i class="bi bi-phone orange-color"></i>+48 777 888 999</p>
+              <p><i class="bi bi-at orange-color"></i>kontakt@mnx-studio.pl</p>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+          
+    </main>
+
+    <footer class="bg-dark border-top py-2 text-light text-muted text-center">
+      <p>| MNX Studio &copy; 2077 | </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

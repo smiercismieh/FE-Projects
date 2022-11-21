@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.hero-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(32, 32, 32, 0.6);
+  z-index: -1;
+}
+
+.top-hero {
+  position: relative;
+  height: 280px;
+  background-size: cover;
+  z-index: 0;
+}
+
+.top-hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+.navbar {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-brand {
+  font-size: 2.2rem;
+  text-transform: none;
+}
+
+.navbar .navbar-toggler {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header .carousel-item {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+header .carousel-img-one {
+  background-image: url("../img/camaro_640.jpg");
+}
+
+header .carousel-img-two {
+  background-image: url("../img/c63_640.jpg");
+}
+
+header .carousel-img-three {
+  background-image: url("../img/mustang_640.jpg");
+}
+
+.home-boxes .card i {
+  font-size: 3.2rem;
+  padding-bottom: 1rem;
+}
+
+.home-boxes .home-img {
+  position: relative;
+  background-image: url("../img/camaro_new_640.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: 25% 70%;
+  z-index: 0;
+}
+
+.home-boxes .home-img h3 {
+  font-size: 2.6rem;
+}
+
+.history .row h3 {
+  font-size: 2.6rem;
+}
+
+.history .row .history-img {
+  height: 200px;
+  background-image: url("../img/history-car_640.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us-hero {
+  position: relative;
+  background-image: url("../img/about/road_640.jpg");
+  background-position: center;
+}
+
+.about-us-hero .top-hero-text {
+  position: relative;
+  top: 30px;
+}
+
+.passion .passion-img {
+  position: relative;
+  height: 200px;
+  background-image: url("../img/about/engine_640.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.passion .passion-text h3 {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline #0d6efd;
+          text-decoration: underline #0d6efd;
+}
+
+.passion .row {
+  height: 100%;
+}
+
+.about-us-cards .container .row .card .inside {
+  -webkit-box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+          box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+}
+
+.about-us-cards .container .row .card .inside .card-icon {
+  font-size: 3rem;
+}
+
+.services-hero {
+  position: relative;
+  background-image: url("../img/services/services_hero_640.jpg");
+  background-position: 50% 80%;
+}
+
+.services-hero .top-hero-text {
+  position: relative;
+  top: 30px;
+}
+
+.our-services .row .service-card {
+  position: relative;
+  height: 300px;
+  -webkit-box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+          box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.our-services .row .service-card .card-body {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.our-services .row .service-card .card-body p {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.our-services .row .service-one {
+  background-image: url("..//img/services/mechanic_640.jpg");
+}
+
+.our-services .row .service-two {
+  background-image: url("../img/services/headlight_640.jpg");
+}
+
+.our-services .row .service-three {
+  background-image: url("../img/services/speaker_640.jpg");
+}
+
+.our-services .row .service-four {
+  background-image: url("../img/services/bmw_640.jpg");
+}
+
+.projects-hero {
+  position: relative;
+  background-image: url("../img/projects/projects_hero_640.jpg");
+  background-position: 50% 80%;
+}
+
+.projects-hero .top-hero-text {
+  position: relative;
+  top: 30px;
+}
+
+.projects .project-cards .card {
+  border: 0;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+.projects .project-cards .card img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .project-cards .card .card-shadow {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+          box-shadow: 0 0 5px rgba(32, 32, 32, 0.6);
+}
+
+.projects .project-cards .card .card-body {
+  padding: 1.2rem 2rem;
+}
+
+.projects .project-cards .card .card-footer {
+  padding: 1.2rem 2rem;
+  color: #6c757d;
+}
+
+.projects .project-cards .card .card-footer a {
+  font-size: 1.4rem;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.projects .project-cards .card .card-footer a:hover {
+  color: #f8f9fa;
+  background-color: #212529;
+}
+
+.contact-hero {
+  position: relative;
+  background-image: url("../img/contact/forest_tree_640.jpg");
+  background-position: center;
+}
+
+.contact-hero .top-hero-text {
+  position: relative;
+  top: 30px;
+}
+
+.contact .container h3 {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+.contact .container input,
+.contact .container textarea,
+.contact .container select {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.contact .container button {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  width: 120px;
+}
+
+.contact .container .contact-logo {
+  font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  .passion .passion-img {
+    height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .passion {
+    -webkit-box-shadow: inset 0 8px 10px -10px rgba(32, 32, 32, 0.6);
+            box-shadow: inset 0 8px 10px -10px rgba(32, 32, 32, 0.6);
+  }
+  .passion .container {
+    padding: 0;
+  }
+  .passion .container .row {
+    -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+  }
+  .passion .container .row .passion-img {
+    height: 360px;
+    background-image: url("../img/about/engine_1920.jpg");
+  }
+  .passion .container .row .passion-text h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .carousel-item {
+    height: 600px;
+  }
+  header .carousel-img-one {
+    background-image: url("../img/camaro_1920.jpg");
+  }
+  header .carousel-img-two {
+    background-image: url("../img/c63_1920.jpg");
+    background-position-y: 30%;
+  }
+  header .carousel-img-three {
+    background-image: url("../img/mustang_1920.jpg");
+    background-position-y: 66%;
+  }
+  .home-boxes .home-img {
+    background-image: url("../img/camaro_new_1920.jpg");
+  }
+  .home-boxes .card i {
+    font-size: 4rem;
+  }
+  .history .row .history-img {
+    height: 250px;
+    background-image: url("../img/history-car_1920.jpg");
+  }
+  .about-us-hero {
+    background-image: url("../img/about/road_1920.jpg");
+    background-position: 50% 65%;
+  }
+  .services-hero {
+    background-image: url("../img/services/services_hero_1920.jpg");
+  }
+  .projects-hero {
+    background-image: url("../img/projects/projects_hero_1920.jpg");
+  }
+  .contact-hero {
+    background-image: url("../img/contact/forest_tree_1920.jpg");
+  }
+}
+/*# sourceMappingURL=main.css.map */

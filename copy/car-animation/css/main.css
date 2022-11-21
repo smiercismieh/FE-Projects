@@ -1,0 +1,352 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  background: #333;
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  height: 60vh;
+  background-image: linear-gradient(-20deg, #2651d1, #2e87f4);
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sky::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 7, 46, 0);
+  -webkit-animation: sky 20s 2s ease-in-out infinite;
+          animation: sky 20s 2s ease-in-out infinite;
+}
+
+.sun {
+  position: relative;
+  left: 10%;
+  top: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: #ffd726;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 100px #fae100, -4px -2px 30px #fcdd0d, 2px 1px 300px #fdda19, 0 0 5px #ffd726;
+          box-shadow: 0 0 100px #fae100, -4px -2px 30px #fcdd0d, 2px 1px 300px #fdda19, 0 0 5px #ffd726;
+  -webkit-animation: sun 20s 2s ease-in-out infinite;
+          animation: sun 20s 2s ease-in-out infinite;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ground {
+  position: relative;
+  bottom: 0;
+  height: 40vh;
+  background-color: #442222;
+}
+
+.bg-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  -webkit-animation: ground 20s 2s ease-in-out infinite;
+          animation: ground 20s 2s ease-in-out infinite;
+}
+
+.grass {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #11af11;
+}
+
+.road {
+  position: absolute;
+  top: 10%;
+  height: 35%;
+  width: 100%;
+  background-color: #949090;
+}
+
+.car {
+  position: absolute;
+  bottom: 60%;
+  left: 300px;
+  height: 100px;
+  width: 250px;
+  background-color: tomato;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 60px;
+  -webkit-animation: car 20s 2s linear infinite both;
+          animation: car 20s 2s linear infinite both;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.car::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  display: block;
+  height: 40px;
+  width: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: tomato;
+}
+
+.car::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  display: block;
+  height: 50px;
+  width: 60px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 10px;
+  background-color: tomato;
+}
+
+.window {
+  position: absolute;
+  background-color: dodgerblue;
+}
+
+.rear-window {
+  left: 0;
+  height: 60px;
+  width: 50px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 20px;
+}
+
+.front-window {
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 60px;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 30px;
+}
+
+.wheels {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #333;
+  bottom: -25px;
+  z-index: 3;
+  border: 3px dashed #999;
+  -webkit-animation: wheels 20s 2s linear infinite;
+          animation: wheels 20s 2s linear infinite;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.rear-wheel {
+  left: 12.5%;
+}
+
+.front-wheel {
+  left: 78.5%;
+}
+
+@-webkit-keyframes car {
+  0% {
+    left: 300px;
+  }
+  40% {
+    left: 2000px;
+  }
+  60% {
+    z-index: -1;
+  }
+  70% {
+    left: -1000px;
+  }
+  80% {
+    z-index: 1;
+    left: -600px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes car {
+  0% {
+    left: 300px;
+  }
+  40% {
+    left: 2000px;
+  }
+  60% {
+    z-index: -1;
+  }
+  70% {
+    left: -1000px;
+  }
+  80% {
+    z-index: 1;
+    left: -600px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@-webkit-keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(4200deg);
+            transform: rotate(4200deg);
+  }
+}
+
+@keyframes wheels {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(4200deg);
+            transform: rotate(4200deg);
+  }
+}
+
+@-webkit-keyframes sun {
+  10% {
+    top: 5%;
+  }
+  25% {
+    background-color: #ffd726;
+  }
+  40% {
+    top: 110%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #f39200;
+    -webkit-box-shadow: 0 0 10px #f39200;
+            box-shadow: 0 0 10px #f39200;
+  }
+  45% {
+    top: 100%;
+    -webkit-box-shadow: 0 0 100px rgba(250, 225, 0, 0.2), -4px -2px 30px rgba(252, 221, 13, 0.2), 2px 1px 300px rgba(253, 218, 25, 0.2), 0 0 5px rgba(255, 215, 38, 0.2);
+            box-shadow: 0 0 100px rgba(250, 225, 0, 0.2), -4px -2px 30px rgba(252, 221, 13, 0.2), 2px 1px 300px rgba(253, 218, 25, 0.2), 0 0 5px rgba(255, 215, 38, 0.2);
+    background-color: rgba(255, 215, 38, 0.7);
+  }
+  80% {
+    top: 5%;
+  }
+}
+
+@keyframes sun {
+  10% {
+    top: 5%;
+  }
+  25% {
+    background-color: #ffd726;
+  }
+  40% {
+    top: 110%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #f39200;
+    -webkit-box-shadow: 0 0 10px #f39200;
+            box-shadow: 0 0 10px #f39200;
+  }
+  45% {
+    top: 100%;
+    -webkit-box-shadow: 0 0 100px rgba(250, 225, 0, 0.2), -4px -2px 30px rgba(252, 221, 13, 0.2), 2px 1px 300px rgba(253, 218, 25, 0.2), 0 0 5px rgba(255, 215, 38, 0.2);
+            box-shadow: 0 0 100px rgba(250, 225, 0, 0.2), -4px -2px 30px rgba(252, 221, 13, 0.2), 2px 1px 300px rgba(253, 218, 25, 0.2), 0 0 5px rgba(255, 215, 38, 0.2);
+    background-color: rgba(255, 215, 38, 0.7);
+  }
+  80% {
+    top: 5%;
+  }
+}
+
+@-webkit-keyframes sky {
+  10% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+  45% {
+    background-color: rgba(0, 7, 46, 0.7);
+  }
+  50% {
+    background-color: rgba(0, 7, 46, 0.2);
+  }
+  80% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+}
+
+@keyframes sky {
+  10% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+  45% {
+    background-color: rgba(0, 7, 46, 0.7);
+  }
+  50% {
+    background-color: rgba(0, 7, 46, 0.2);
+  }
+  80% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+}
+
+@-webkit-keyframes ground {
+  10% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+  40% {
+    background-color: rgba(19, 20, 26, 0.4);
+  }
+  45% {
+    background-color: rgba(19, 20, 26, 0.5);
+  }
+  80% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+}
+
+@keyframes ground {
+  10% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+  40% {
+    background-color: rgba(19, 20, 26, 0.4);
+  }
+  45% {
+    background-color: rgba(19, 20, 26, 0.5);
+  }
+  80% {
+    background-color: rgba(0, 7, 46, 0);
+  }
+}
+/*# sourceMappingURL=main.css.map */

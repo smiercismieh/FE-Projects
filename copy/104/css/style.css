@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #333;
+}
+
+div {
+
+	border: 2px solid black;
+	text-align: center;
+	font-size: 18px;
+	line-height: 60px;
+	transition: 1s;?
+}
+
+.long {
+	position: absolute;
+	background-color: tomato;
+	width: 800px;
+	height: 60px;
+	top: 50px;
+	left: calc(50% - 400px);
+	transition-duration: .5s;
+
+}
+
+.long:hover {
+
+	transform: scale(2);
+	background-color: yellow;
+	width: 400px;
+	left: calc(50% - 200px);
+
+/* Problem z jebanym fontem który się zwęża */
+	
+}
+
+.short {
+	top: 180px;
+	left: calc(50% - 150px);
+	background-color:cornflowerblue;
+	border-radius: 25px;
+
+	transition: 1s linear;
+	
+}
+
+.dim {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	
+}
+
+.short:hover {
+	transform: rotate(360deg);
+}
+
+.short2, .short3 {
+
+	top: 300px;
+	border-radius: 10px;
+}
+
+.short2 {
+	left: calc(25% - 150px);
+	background-color:yellow;
+	transition: transform 1s 1s ease-out;
+	
+}
+.short3 {
+	left: calc(75% - 150px);
+	background-color:greenyellow;
+	transition: transform 1s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	
+}
+
+.short:hover~.short2 {
+
+	transform: rotate(360deg);
+}
+.short:hover~.short3 {
+
+	transform: rotate(-360deg);
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 200px;
+	width: 400px;
+	transform: translate(-50%, -50%);
+	line-height: 200px;
+	transition: background-color .5s;
+}
+
+.center:hover {
+	background-color: #fff;
+
+}
